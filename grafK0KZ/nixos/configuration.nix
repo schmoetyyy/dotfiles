@@ -26,6 +26,7 @@ boot.loader = {
   };
   efi.canTouchEfiVariables = true;
 };
+  hardware.graphics = {enable = true; enable32Bit=true;};
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
