@@ -16,22 +16,26 @@ in
     ];
 
   # Use the systemd-boot EFI boot loader.
-boot.loader = {
-  systemd-boot.enable = false;
-  grub = {
-    enable = true;
-    device = "nodev";
-    efiSupport = true;
-    useOSProber = false;
+  boot.loader = {
+    systemd-boot.enable = false;
+    grub = {
+      enable = true;
+      device = "nodev";
+      efiSupport = true;
+      useOSProber = false;
+    };
+    efi.canTouchEfiVariables = true;
   };
-  efi.canTouchEfiVariables = true;
-};
-  hardware.graphics = {enable = true; enable32Bit=true;};
+
+  hardware.graphics = {
+    enable = true;
+    enable32Bit=true;
+  };
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "nix-server"; # Define your hostname.
+  networking.hostName = "nix-btw"; # Define your hostname.
 
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
