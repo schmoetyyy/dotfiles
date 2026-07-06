@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=custom1-Orange-Light-Custom
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=custom1-Orange-Light-Custom
+MetacityTheme=custom1-Orange-Light-Custom
+IconTheme=Colloid-Orange-Custom-Light
+CursorTheme=custom1-cursors
+ButtonLayout=close,minimize,maximize:menu
